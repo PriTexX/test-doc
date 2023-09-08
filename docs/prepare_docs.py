@@ -19,7 +19,7 @@ def moveImagesToImgFolder():
         os.mkdir("img")
 
     for fileName in os.listdir(".eraser"):
-        os.rename(f"./.eraser/{fileName}", f"./docs/img/{fileName}")
+        os.rename(f".eraser/{fileName}", f"./docs/img/{fileName}")
 
 replaceLinksInFiles()
 moveImagesToImgFolder()
