@@ -24,7 +24,7 @@ def moveImagesToImgFolder():
 
     for root, _, fileNames in os.walk(".eraser"):
         for fileName in fileNames:
-            shutil.move(f"./{root}/{fileName}", f"./docs/img/{fileName}")
+            shutil.move(f"{root}/{fileName}", f"docs/img/{fileName}")
             # os.rename(f"./{root}/{fileName}", f"./docs/img/{fileName}")
 
 replaceLinksInFiles()
