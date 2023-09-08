@@ -9,7 +9,7 @@ def replaceLinksInFiles():
             with open(f"{root}/{fileName}", 'r') as file:
                 content = file.read()
 
-            content = content.replace("/.eraser/", "/img/")
+            content = content.replace("/.eraser/", "/test-doc/img/")
 
             with open(f"{root}/{fileName}", 'w') as file:
                 file.write(content)
