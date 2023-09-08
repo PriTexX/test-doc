@@ -4,7 +4,7 @@ for f in os.listdir('.'):
     print(f)
 
 def replaceLinksInFiles():
-    for root, _, fileNames in os.walk("./docs"):
+    for root, _, fileNames in os.walk("."):
         for fileName in fileNames:
             if fileName.split('.')[-1] != 'md':
                 continue
@@ -23,7 +23,7 @@ def moveImagesToImgFolder():
 
     for root, _, fileNames in os.walk(".eraser"):
         for fileName in fileNames:
-            os.rename(f"{root}/{fileName}", f"docs/img/{fileName}")
+            os.rename(f"../{root}/{fileName}", f"docs/img/{fileName}")
 
 replaceLinksInFiles()
 moveImagesToImgFolder()
