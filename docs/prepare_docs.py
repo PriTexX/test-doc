@@ -33,4 +33,6 @@ def moveImagesToImgFolder():
             file.rename(f"docs/img/{fileName}")
 
 replaceLinksInFiles()
-moveImagesToImgFolder()
+if not os.path.exists("img"):
+    os.mkdir("img")
+# moveImagesToImgFolder()
