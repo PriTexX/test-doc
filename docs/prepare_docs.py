@@ -1,8 +1,7 @@
 import os
-import shutil
 from pathlib import Path
 
-for f in os.listdir('.'):
+for f in os.listdir('docs/img'):
     print(f)
 
 def replaceLinksInFiles():
