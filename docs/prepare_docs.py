@@ -1,8 +1,4 @@
 import os
-from pathlib import Path
-
-for f in os.listdir('docs/img'):
-    print(f)
 
 def replaceLinksInFiles():
     for root, _, fileNames in os.walk("docs"):
@@ -18,20 +14,6 @@ def replaceLinksInFiles():
             with open(f"{root}/{fileName}", 'w') as file:
                 file.write(content)
 
-def moveImagesToImgFolder():
-    if not os.path.exists("img"):
-        os.mkdir("img")
-
-    for root, _, fileNames in os.walk(".eraser"):
-        for fileName in fileNames:
-            # shutil.move(f"{root}/{fileName}", f"docs/img/{fileName}")
-            file = Path(os.path.abspath(f"{root}/{fileName}"))
-
-            print(file.name)
-
-            file.rename(f"docs/img/{fileName}")
-
 replaceLinksInFiles()
 if not os.path.exists("docs/img"):
     os.mkdir("docs/img")
-# moveImagesToImgFolder()
