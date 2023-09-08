@@ -21,8 +21,9 @@ def moveImagesToImgFolder():
     if not os.path.exists("img"):
         os.mkdir("img")
 
-    for root, _, fileName in os.walk(".eraser"):
-        os.rename(f"{root}/{fileName}", f"./docs/img/{fileName}")
+    for root, _, fileNames in os.walk(".eraser"):
+        for fileName in fileNames:
+            os.rename(f"{root}/{fileName}", f"./docs/img/{fileName}")
 
 replaceLinksInFiles()
 moveImagesToImgFolder()
