@@ -1,0 +1,8 @@
+﻿site_name: test-docs
+site_url: https://test-doc.com/
+theme:
+  name: readthedocs
+  highlightjs: true
+nav:
+  - Home: README.md
+  - Test: testt.md
