@@ -1,11 +1,12 @@
 import os
 import shutil
+from pathlib import Path
 
 for f in os.listdir('.'):
     print(f)
 
 def replaceLinksInFiles():
-    for root, _, fileNames in os.walk("."):
+    for root, _, fileNames in os.walk("docs"):
         for fileName in fileNames:
             if fileName.split('.')[-1] != 'md':
                 continue
@@ -24,8 +25,12 @@ def moveImagesToImgFolder():
 
     for root, _, fileNames in os.walk(".eraser"):
         for fileName in fileNames:
-            shutil.move(f"{root}/{fileName}", f"docs/img/{fileName}")
-            # os.rename(f"./{root}/{fileName}", f"./docs/img/{fileName}")
+            # shutil.move(f"{root}/{fileName}", f"docs/img/{fileName}")
+            file = Path(f"{root}/{fileName}")
+
+            print(file.name)
+
+            file.rename(f"docs/img/{fileName}")
 
 replaceLinksInFiles()
 moveImagesToImgFolder()
