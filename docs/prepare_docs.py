@@ -1,5 +1,8 @@
 import os
 
+for f in os.listdir('.'):
+    print(f)
+
 def replaceLinksInFiles():
     for root, _, fileNames in os.walk("./docs"):
         for fileName in fileNames:
