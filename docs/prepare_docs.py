@@ -26,7 +26,7 @@ def moveImagesToImgFolder():
     for root, _, fileNames in os.walk(".eraser"):
         for fileName in fileNames:
             # shutil.move(f"{root}/{fileName}", f"docs/img/{fileName}")
-            file = Path(f"{root}/{fileName}")
+            file = Path(os.path.abspath(f"{root}/{fileName}"))
 
             print(file.name)
 
