@@ -23,7 +23,7 @@ def moveImagesToImgFolder():
 
     for root, _, fileNames in os.walk(".eraser"):
         for fileName in fileNames:
-            os.rename(f"../{root}/{fileName}", f"docs/img/{fileName}")
+            os.rename(f"./{root}/{fileName}", f"./docs/img/{fileName}")
 
 replaceLinksInFiles()
 moveImagesToImgFolder()
