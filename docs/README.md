@@ -4,9 +4,10 @@ Index [﻿file ](https://app.eraser.io/workspace/oNmCJNbYDsJLF7FOS1Ei?elements=i
 
 
 
-![Figure 1](/.eraser/oNmCJNbYDsJLF7FOS1Ei___HrIdJYTDEZYbcJ34gslNZfHNFSv2___---figure---V169b1LADP64yUkllEVYT---figure---irpBWYuf3bfpWRoXglqbCw.png "Figure 1")
+![Figure 1](/.eraser/oNmCJNbYDsJLF7FOS1Ei___HrIdJYTDEZYbcJ34gslNZfHNFSv2___---figure---dfalhfuY8s1UShzvPmNz8---figure---irpBWYuf3bfpWRoXglqbCw.png "Figure 1")
 
-шкрупзшукырпзмшукрзшгрпгшк
+- [x] шкрупзшукырпзмшукрзшгрпгшкsgsdgs
+
 
 
 <!--- Eraser file: https://app.eraser.io/workspace/oNmCJNbYDsJLF7FOS1Ei --->
